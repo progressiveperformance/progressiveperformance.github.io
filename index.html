@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Progressive Performance — Roadmap</title>
+<style>
+  :root {
+    --bg: #fbfaf6; --ink: #24231f; --ink-soft: #6b675c; --card: #ffffff;
+    --line: #e9e3d4; --sand: #f6f2e8; --gold: #e8b923; --gold-ink: #8a6a05;
+    --gold-soft: #fdf6dd; --green: #15803d; --green-soft: #e8f5ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1a1f; --ink: #f2efe6; --ink-soft: #a39e90; --card: #232228;
+      --line: #33313a; --sand: #2a2930; --gold: #f0c53a; --gold-ink: #f0c53a;
+      --gold-soft: #3a2f10; --green: #4ade80; --green-soft: #12301c;
+    }
+  }
+  html { background: var(--bg); }
+  body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink); margin: 0; padding: 2rem 1rem 4rem; line-height: 1.5; }
+  .wrap { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; }
+  header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.35rem; }
+  header p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; max-width: 60ch; }
+  .stamp { display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--gold-ink);
+    background: var(--gold-soft); border: 1px solid var(--gold); padding: 0.15rem 0.6rem;
+    border-radius: 999px; margin-bottom: 0.8rem; }
+  section h2 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.09em; color: var(--ink-soft); margin: 0 0 0.6rem; }
+  .list { background: var(--card); border: 1px solid var(--line); border-radius: 0.75rem; overflow: hidden; }
+  .row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+    padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: none; }
+  .title { font-size: 0.92rem; font-weight: 500; }
+  .done .title { color: var(--ink-soft); }
+  .tags { display: flex; gap: 0.35rem; flex-shrink: 0; }
+  .chip { font-size: 0.68rem; font-weight: 600; padding: 0.08rem 0.5rem; border-radius: 999px;
+    background: var(--sand); color: var(--ink-soft); white-space: nowrap; }
+  .chip.gold { background: var(--gold-soft); color: var(--gold-ink); }
+  .chip.green { background: var(--green-soft); color: var(--green); }
+  footer { font-size: 0.8rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="stamp">Updated 12 Aug 2026, 10:26 am SGT</span>
+    <h1>Progressive Performance — Roadmap</h1>
+    <p>What's being built in the coaching platform, in order. This page updates
+    automatically as work moves.</p>
+  </header>
+  <section>
+    <h2>Working on now</h2>
+    <div class="list">
+      <div class="row"><div class="title">Partnership page: public showcase of current partners</div><div class="tags"><span class="chip gold">awaiting details</span></div></div>
+      <div class="row"><div class="title">Epic: settle packages and payments into one path</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Progress tracking: typed units, coach-named metrics, progress photos</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Public checkout at /payment — a coach closes a lead on the spot</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Venue is hardcoded to Energia by a trigger, silently falsifying location</div><div class="tags"><span class="chip ">fix</span></div></div>
+      <div class="row"><div class="title">packages.training_type default '1-on-1' violates its own check constraint</div><div class="tags"><span class="chip ">fix</span></div></div>
+      <div class="row"><div class="title">rate-limit-health test stayed green while the endpoint was broken</div><div class="tags"></div></div>
+    </div>
+  </section>
+  <section>
+    <h2>New — being sorted</h2>
+    <div class="list">
+      <div class="row"><div class="title">Workout logging polish: thumbnails, drag reorder, warm-up sets</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">Admin CRM: missing create actions, client notes, and inert dashboard stats</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">Client schedule: reschedule/cancel requests and Add to calendar on /book</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">Client training: exercise demo visuals and pre-open workout scope</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">Attendance marking still waits on write + refresh - make it optimistic</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">MetricDetail: time-range control, date-true x-axis, optimistic record, headline value</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+    </div>
+  </section>
+  <section>
+    <h2>Up next</h2>
+    <div class="list">
+      <div class="row"><div class="title">Admin and coach schedules do the same jobs through different code</div><div class="tags"><span class="chip ">feature</span></div></div>
+      <div class="row"><div class="title">Epic: coach workspace cleanup (rename to Cycles, workout state, timer, chrome)</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Class detail: make every class setting editable by the coach</div><div class="tags"><span class="chip ">feature</span></div></div>
+      <div class="row"><div class="title">Coach-editable class weekly pattern, with regeneration rules</div><div class="tags"><span class="chip ">feature</span></div></div>
+      <div class="row"><div class="title">Verify the coach attendance flow with a real coach: shipped 2026-08-02, never used</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Drop 7 dead tables with zero rows and zero code references</div><div class="tags"></div></div>
+      <div class="row"><div class="title">CacheBuster unregisters the service worker on every load, likely breaking push notifications</div><div class="tags"><span class="chip ">fix</span></div></div>
+    </div>
+  </section>
+  <section>
+    <h2>Later</h2>
+    <div class="list">
+      <div class="row"><div class="title">Admin CRM redesign: design system and navigation first</div><div class="tags"><span class="chip ">feature</span></div></div>
+      <div class="row"><div class="title">79% of production load time is bundle download, not server time</div><div class="tags"></div></div>
+      <div class="row"><div class="title">No staging environment: one Supabase project blocks migrations, local dev and QA</div><div class="tags"><span class="chip ">feature</span></div></div>
+      <div class="row"><div class="title">CRM &amp; Business-Flow Overhaul</div><div class="tags"></div></div>
+    </div>
+  </section>
+  <section>
+    <h2>Shipped recently</h2>
+    <div class="list">
+      <div class="row done"><div class="title">Two parallel admin surfaces: /admin/* and /crm/admin/* both exist</div><div class="tags"><span class="chip green">done 12 Aug</span></div></div>
+      <div class="row done"><div class="title">Coaches cannot reschedule: the working implementation is admin-only</div><div class="tags"><span class="chip green">done 9 Aug</span></div></div>
+      <div class="row done"><div class="title">Buddy classes render once per member on the coach calendar, with the wrong member count</div><div class="tags"><span class="chip green">done 9 Aug</span></div></div>
+      <div class="row done"><div class="title">Client self-registration: public page, match-only, reuses accept-invite</div><div class="tags"><span class="chip green">done 5 Aug</span></div></div>
+      <div class="row done"><div class="title">Record company sessions, and report venue usage in a Stats section</div><div class="tags"><span class="chip green">done 5 Aug</span></div></div>
+      <div class="row done"><div class="title">Migration history is broken: db push would replay destructive migrations on production</div><div class="tags"><span class="chip green">done 4 Aug</span></div></div>
+    </div>
+  </section>
+  <footer>Progressive Performance Coaching · Singapore</footer>
+</div>
+</body>
+</html>
