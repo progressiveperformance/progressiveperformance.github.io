@@ -46,7 +46,7 @@
 <body>
 <div class="wrap">
   <header>
-    <span class="stamp">Updated 12 Aug 2026, 10:26 am SGT</span>
+    <span class="stamp">Updated 12 Aug 2026, 11:09 am SGT</span>
     <h1>Progressive Performance — Roadmap</h1>
     <p>What's being built in the coaching platform, in order. This page updates
     automatically as work moves.</p>
@@ -54,44 +54,40 @@
   <section>
     <h2>Working on now</h2>
     <div class="list">
-      <div class="row"><div class="title">Partnership page: public showcase of current partners</div><div class="tags"><span class="chip gold">awaiting details</span></div></div>
+      <div class="row"><div class="title">Make attendance marking instant for coaches</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
       <div class="row"><div class="title">Epic: settle packages and payments into one path</div><div class="tags"></div></div>
       <div class="row"><div class="title">Progress tracking: typed units, coach-named metrics, progress photos</div><div class="tags"></div></div>
       <div class="row"><div class="title">Public checkout at /payment — a coach closes a lead on the spot</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Venue is hardcoded to Energia by a trigger, silently falsifying location</div><div class="tags"><span class="chip ">fix</span></div></div>
-      <div class="row"><div class="title">packages.training_type default '1-on-1' violates its own check constraint</div><div class="tags"><span class="chip ">fix</span></div></div>
-      <div class="row"><div class="title">rate-limit-health test stayed green while the endpoint was broken</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Record the real venue for every session</div><div class="tags"><span class="chip ">fix</span></div></div>
+      <div class="row"><div class="title">Fix package creation failing when no training type is chosen</div><div class="tags"><span class="chip ">fix</span></div></div>
     </div>
   </section>
-  <section>
-    <h2>New — being sorted</h2>
-    <div class="list">
-      <div class="row"><div class="title">Workout logging polish: thumbnails, drag reorder, warm-up sets</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Admin CRM: missing create actions, client notes, and inert dashboard stats</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Client schedule: reschedule/cancel requests and Add to calendar on /book</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Client training: exercise demo visuals and pre-open workout scope</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Attendance marking still waits on write + refresh - make it optimistic</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">MetricDetail: time-range control, date-true x-axis, optimistic record, headline value</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-    </div>
-  </section>
+
   <section>
     <h2>Up next</h2>
     <div class="list">
-      <div class="row"><div class="title">Admin and coach schedules do the same jobs through different code</div><div class="tags"><span class="chip ">feature</span></div></div>
-      <div class="row"><div class="title">Epic: coach workspace cleanup (rename to Cycles, workout state, timer, chrome)</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Admin CRM: missing create actions, client notes, and inert dashboard stats</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">Client schedule: reschedule/cancel requests and Add to calendar on /book</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">Better progress charts: zoom, accurate dates, instant saving</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">One schedule system for admin and coach</div><div class="tags"><span class="chip ">feature</span></div></div>
+      <div class="row"><div class="title">Coach workspace cleanup: naming, workout state, timer</div><div class="tags"></div></div>
       <div class="row"><div class="title">Class detail: make every class setting editable by the coach</div><div class="tags"><span class="chip ">feature</span></div></div>
-      <div class="row"><div class="title">Coach-editable class weekly pattern, with regeneration rules</div><div class="tags"><span class="chip ">feature</span></div></div>
-      <div class="row"><div class="title">Verify the coach attendance flow with a real coach: shipped 2026-08-02, never used</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Drop 7 dead tables with zero rows and zero code references</div><div class="tags"></div></div>
-      <div class="row"><div class="title">CacheBuster unregisters the service worker on every load, likely breaking push notifications</div><div class="tags"><span class="chip ">fix</span></div></div>
+      <div class="row"><div class="title">Coaches can edit a class's weekly schedule</div><div class="tags"><span class="chip ">feature</span></div></div>
+      <div class="row"><div class="title">Fix the health check that always reports degraded</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Watch a real coach use attendance marking</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Remove unused database tables</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Fix page caching so push notifications can work</div><div class="tags"><span class="chip ">fix</span></div></div>
     </div>
   </section>
   <section>
     <h2>Later</h2>
     <div class="list">
+      <div class="row"><div class="title">Partnership page: public showcase of current partners</div><div class="tags"><span class="chip gold">awaiting details</span></div></div>
+      <div class="row"><div class="title">Workout logging polish: thumbnails, drag reorder, warm-up sets</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
+      <div class="row"><div class="title">Client training: exercise demo visuals and pre-open workout scope</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
       <div class="row"><div class="title">Admin CRM redesign: design system and navigation first</div><div class="tags"><span class="chip ">feature</span></div></div>
-      <div class="row"><div class="title">79% of production load time is bundle download, not server time</div><div class="tags"></div></div>
-      <div class="row"><div class="title">No staging environment: one Supabase project blocks migrations, local dev and QA</div><div class="tags"><span class="chip ">feature</span></div></div>
+      <div class="row"><div class="title">Make the app load faster</div><div class="tags"></div></div>
+      <div class="row"><div class="title">Set up a staging environment</div><div class="tags"><span class="chip ">feature</span></div></div>
       <div class="row"><div class="title">CRM &amp; Business-Flow Overhaul</div><div class="tags"></div></div>
     </div>
   </section>
