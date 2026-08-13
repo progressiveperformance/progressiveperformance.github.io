@@ -40,13 +40,23 @@
     background: var(--sand); color: var(--ink-soft); white-space: nowrap; }
   .chip.gold { background: var(--gold-soft); color: var(--gold-ink); }
   .chip.green { background: var(--green-soft); color: var(--green); }
+  .row.col { display: block; }
+  .row.col .head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+  .shot { margin-top: 0.5rem; }
+  .shot summary { cursor: pointer; font-size: 0.78rem; font-weight: 600; color: var(--gold-ink);
+    list-style: none; display: inline-flex; align-items: center; gap: 0.3rem; }
+  .shot summary::-webkit-details-marker { display: none; }
+  .shot summary::before { content: "▸"; font-size: 0.7rem; transition: transform 0.15s; }
+  .shot[open] summary::before { transform: rotate(90deg); }
+  .shot img { display: block; width: 100%; height: auto; margin-top: 0.6rem;
+    border: 1px solid var(--line); border-radius: 0.5rem; }
   footer { font-size: 0.8rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 1.2rem; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <span class="stamp">Updated 13 Aug 2026, 5:07 pm SGT</span>
+    <span class="stamp">Updated 14 Aug 2026, 1:57 am SGT</span>
     <h1>Progressive Performance — Roadmap</h1>
     <p>What's being built in the coaching platform, in order. This page updates
     automatically as work moves.</p>
@@ -93,14 +103,14 @@
   <section>
     <h2>Shipped recently</h2>
     <div class="list">
-      <div class="row done"><div class="title">Fix package creation failing when no training type is chosen</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div>
-      <div class="row done"><div class="title">Packages now live on the class, with their controls</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div>
-      <div class="row done"><div class="title">Booking form no longer offers a time the coach is already teaching</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div>
-      <div class="row done"><div class="title">Client record: one Billing section, and clearer payment buttons</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div>
-      <div class="row done"><div class="title">Classes list shows how many sessions are booked, and who hasn't paid</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div>
-      <div class="row done"><div class="title">Weight and measurement readings can be dated in the past</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div>
-      <div class="row done"><div class="title">Marking attendance now uses real checkboxes</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div>
-      <div class="row done"><div class="title">Sessions can be scheduled before the client has paid</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div>
+      <div class="row done col"><div class="head"><div class="title">Fix package creation failing when no training type is chosen</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div></div>
+      <div class="row done col"><div class="head"><div class="title">Packages now live on the class, with their controls</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div></div>
+      <div class="row done col"><div class="head"><div class="title">Booking form no longer offers a time the coach is already teaching</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div></div>
+      <div class="row done col"><div class="head"><div class="title">Client record: one Billing section, and clearer payment buttons</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div></div>
+      <div class="row done col"><div class="head"><div class="title">Classes list shows how many sessions are booked, and who hasn't paid</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div></div>
+      <div class="row done col"><div class="head"><div class="title">Weight and measurement readings can be dated in the past</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div></div>
+      <div class="row done col"><div class="head"><div class="title">Marking attendance now uses real checkboxes</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div></div>
+      <div class="row done col"><div class="head"><div class="title">Sessions can be scheduled before the client has paid</div><div class="tags"><span class="chip green">done 13 Aug</span></div></div></div>
     </div>
   </section>
   <footer>Progressive Performance Coaching · Singapore</footer>
