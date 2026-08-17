@@ -2,140 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
 <title>Progressive Performance — Roadmap</title>
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=https://app.progressiveperformance.sg/roadmap">
+<link rel="canonical" href="https://app.progressiveperformance.sg/roadmap">
 <style>
-  :root {
-    --bg: #fbfaf6; --ink: #24231f; --ink-soft: #6b675c; --card: #ffffff;
-    --line: #e9e3d4; --sand: #f6f2e8; --gold: #e8b923; --gold-ink: #8a6a05;
-    --gold-soft: #fdf6dd; --green: #15803d; --green-soft: #e8f5ec;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #1b1a1f; --ink: #f2efe6; --ink-soft: #a39e90; --card: #232228;
-      --line: #33313a; --sand: #2a2930; --gold: #f0c53a; --gold-ink: #f0c53a;
-      --gold-soft: #3a2f10; --green: #4ade80; --green-soft: #12301c;
-    }
-  }
-  html { background: var(--bg); }
-  body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    color: var(--ink); margin: 0; padding: 2rem 1rem 4rem; line-height: 1.5; }
-  .wrap { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; }
-  header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.35rem; }
-  header p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; max-width: 60ch; }
-  .stamp { display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--gold-ink);
-    background: var(--gold-soft); border: 1px solid var(--gold); padding: 0.15rem 0.6rem;
-    border-radius: 999px; margin-bottom: 0.8rem; }
-  section h2 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.09em; color: var(--ink-soft); margin: 0 0 0.6rem; }
-  .list { background: var(--card); border: 1px solid var(--line); border-radius: 0.75rem; overflow: hidden; }
-  .row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
-    padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); }
-  .row:last-child { border-bottom: none; }
-  .title { font-size: 0.92rem; font-weight: 500; }
-  .done .title { color: var(--ink-soft); }
-  .tags { display: flex; gap: 0.35rem; flex-shrink: 0; }
-  .chip { font-size: 0.68rem; font-weight: 600; padding: 0.08rem 0.5rem; border-radius: 999px;
-    background: var(--sand); color: var(--ink-soft); white-space: nowrap; }
-  .chip.gold { background: var(--gold-soft); color: var(--gold-ink); }
-  .chip.green { background: var(--green-soft); color: var(--green); }
-  .row.col { display: block; }
-  .row.col .head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
-  .shot { margin-top: 0.5rem; }
-  .shot summary { cursor: pointer; font-size: 0.78rem; font-weight: 600; color: var(--gold-ink);
-    list-style: none; display: inline-flex; align-items: center; gap: 0.3rem; }
-  .shot summary::-webkit-details-marker { display: none; }
-  .shot summary::before { content: "▸"; font-size: 0.7rem; transition: transform 0.15s; }
-  .shot[open] summary::before { transform: rotate(90deg); }
-  .shot img { display: block; width: 100%; height: auto; margin-top: 0.6rem;
-    border: 1px solid var(--line); border-radius: 0.5rem; }
-  footer { font-size: 0.8rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 1.2rem; }
+  body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+       background:#fbfaf6;color:#24231f;display:grid;place-items:center;min-height:100vh;margin:0;padding:1.5rem}
+  a{color:#9a6a12}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <span class="stamp">Updated 17 Aug 2026, 4:13 pm SGT</span>
-    <h1>Progressive Performance — Roadmap</h1>
-    <p>What's being built in the coaching platform, in order. This page updates
-    automatically as work moves.</p>
-  </header>
-  <section>
-    <h2>Working on now</h2>
-    <div class="list">
-      <div class="row"><div class="title">The schedule hides how far behind the book is</div><div class="tags"></div></div>
-      <div class="row"><div class="title">The admin Schedule will stop loading as sessions build up</div><div class="tags"><span class="chip ">fix</span></div></div>
-      <div class="row"><div class="title">Four admin screens show zero because they read the replaced tables</div><div class="tags"><span class="chip ">fix</span></div></div>
-      <div class="row"><div class="title">Tell someone when there is something to act on</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Coaches get an evening WhatsApp naming what still needs marking</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Selling a package: set the rates once, then just type the number of sessions</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Online coaching has no shape in the system</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Epic: settle packages and payments into one path</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Public checkout at /payment — a coach closes a lead on the spot</div><div class="tags"></div></div>
-    </div>
-  </section>
-  <section>
-    <h2>New — being sorted</h2>
-    <div class="list">
-      <div class="row"><div class="title">Monthly packages will not renew: the cron is registered nowhere and new packages are not marked renewing</div><div class="tags"><span class="chip ">fix</span></div></div>
-      <div class="row"><div class="title">Booking outside the package: warn that additional charges apply</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Make the roadmap visual: a drawing per item, shipped and upcoming</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Client schedule claims Energia when no venue is recorded; an event's venue cannot be corrected</div><div class="tags"><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">A class's venue lives in two columns and no write path sets both</div><div class="tags"><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Class settings and public booking still use the hardcoded venue list</div><div class="tags"><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Selling a buddy package: confirm the partner, and split the invoice two ways</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Booking a session does not offer the different venues</div><div class="tags"><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Google Calendar is connected but booked sessions never appear on it</div><div class="tags"><span class="chip gold">new</span></div></div>
-    </div>
-  </section>
-  <section>
-    <h2>Up next</h2>
-    <div class="list">
-      <div class="row"><div class="title">Two client pages will start failing outright as training history builds</div><div class="tags"><span class="chip ">fix</span></div></div>
-      <div class="row"><div class="title">The coach workspace loads the whole gym to draw one page</div><div class="tags"></div></div>
-      <div class="row"><div class="title">The client record takes 21 database trips in a row to open</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Consultations do not have a home of their own</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Blocking time off no longer moves the sessions that clash with it</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Admin CRM: missing create actions, client notes, and inert dashboard stats</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Client schedule: reschedule/cancel requests and Add to calendar on /book</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Better progress charts: zoom, accurate dates, instant saving</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">One schedule system for admin and coach</div><div class="tags"><span class="chip ">feature</span></div></div>
-      <div class="row"><div class="title">Coach workspace cleanup: naming, workout state, timer</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Class detail: make every class setting editable by the coach</div><div class="tags"><span class="chip ">feature</span></div></div>
-      <div class="row"><div class="title">Fix the health check that always reports degraded</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Watch a real coach use attendance marking</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Remove unused database tables</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Fix page caching so push notifications can work</div><div class="tags"><span class="chip ">fix</span></div></div>
-    </div>
-  </section>
-  <section>
-    <h2>Later</h2>
-    <div class="list">
-      <div class="row"><div class="title">Nutrition tracking: log meals, starting with Singapore hawker food</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Partnership page: public showcase of current partners</div><div class="tags"><span class="chip gold">awaiting details</span></div></div>
-      <div class="row"><div class="title">Workout logging polish: thumbnails, drag reorder, warm-up sets</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Client training: exercise demo visuals and pre-open workout scope</div><div class="tags"><span class="chip ">feature</span><span class="chip gold">new</span></div></div>
-      <div class="row"><div class="title">Admin CRM redesign: design system and navigation first</div><div class="tags"><span class="chip ">feature</span></div></div>
-      <div class="row"><div class="title">Make the app load faster</div><div class="tags"></div></div>
-      <div class="row"><div class="title">Set up a staging environment</div><div class="tags"><span class="chip ">feature</span></div></div>
-      <div class="row"><div class="title">CRM &amp; Business-Flow Overhaul</div><div class="tags"></div></div>
-    </div>
-  </section>
-  <section>
-    <h2>Shipped recently</h2>
-    <div class="list">
-      <div class="row done col"><div class="head"><div class="title">Public /roadmap page generated from this repo's issues</div><div class="tags"><span class="chip green">done 17 Aug</span></div></div></div>
-      <div class="row done col"><div class="head"><div class="title">The client app shows no sessions and no package</div><div class="tags"><span class="chip green">done 17 Aug</span></div></div></div>
-      <div class="row done col"><div class="head"><div class="title">Every admin page waits on the same sign-in check twice</div><div class="tags"><span class="chip green">done 17 Aug</span></div></div></div>
-      <div class="row done col"><div class="head"><div class="title">A stranger can book a coach who is already teaching</div><div class="tags"><span class="chip green">done 16 Aug</span></div></div></div>
-      <div class="row done col"><div class="head"><div class="title">Admin cannot add a session from the Schedule page</div><div class="tags"><span class="chip green">done 16 Aug</span></div></div></div>
-      <div class="row done col"><div class="head"><div class="title">Make attendance marking instant for coaches</div><div class="tags"><span class="chip green">done 16 Aug</span></div></div></div>
-      <div class="row done col"><div class="head"><div class="title">Progress tracking: typed units, coach-named metrics, progress photos</div><div class="tags"><span class="chip green">done 16 Aug</span></div></div></div>
-      <div class="row done col"><div class="head"><div class="title">Record the real venue for every session</div><div class="tags"><span class="chip green">done 16 Aug</span></div></div></div>
-    </div>
-  </section>
-  <footer>Progressive Performance Coaching · Singapore</footer>
-</div>
+<p>The roadmap now lives at <a href="https://app.progressiveperformance.sg/roadmap">app.progressiveperformance.sg/roadmap</a>.</p>
 </body>
 </html>
